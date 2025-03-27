@@ -1,6 +1,6 @@
 {
   "prompt" : {
-    "input" : "Explain to a customer why they have been reccomended a specific Health Insurance {{Policy}} given the information we were provided from the customer. Provide how we arrived at the decision given their {{Age}}, {{Dependents}}, and {{Physical Activity Level}}. The physical activity level is based on a scale of 1 to 5 with 5 being extremely active and 1 being minimal physical activity a day. Be as precise as possible and avoid any harsh language. ",
+    "input" : "Explain to a customer why they have been reccomended a specific Health Insurance {{Policy}} given the information we were provided from the customer. Provide how we arrived at the decision given their {{Age}}, {{Dependents}}, and {{Physical Activity Level}}. The physical activity level is based on a scale of 1 to 5 with 5 being extremely active and 1 being minimal physical activity a day. The higher the physical activity level is the more likely you could be injured as you are exercising more. Be as precise as possible and avoid any harsh language. ",
     "variables" : [ {
       "id" : 1,
       "name" : "Policy",

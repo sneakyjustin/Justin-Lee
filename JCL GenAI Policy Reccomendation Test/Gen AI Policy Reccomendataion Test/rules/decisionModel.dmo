@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>Gen AI Policy Reccomendataion Test</name>
-  <uuid>0d619003-517f-479d-b712-d0444285469e</uuid>
+  <uuid>834cb6f5-a2b5-4d50-970d-d3ad8eb5f313</uuid>
   <locale>en_US</locale>
   <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="genAIPolicyReccomendataionTest" namespace="">
     <extensionElements>

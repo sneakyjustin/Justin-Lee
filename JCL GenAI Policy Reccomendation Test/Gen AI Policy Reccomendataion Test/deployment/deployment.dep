@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test:genAIPolicyReccomendataionTest" ruleAppVersion="LATEST-SNAPSHOT" packageName="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest" managingXom="true">
   <name>Gen_AI_Policy_Reccomendataion_Test</name>
-  <uuid>19983dc6-3ae3-4524-9d3c-75ec28b132f4</uuid>
+  <uuid>7d621c30-bf97-4adb-9443-36fc4cd246bb</uuid>
   <locales>en_US</locales>
   <operations operationName="operation">
-    <operation href="operation.dop#bb2aedac-fdcb-4b56-aeb7-3aacd250f4b6"/>
+    <operation href="operation.dop#1df198e1-f3f5-43dc-ae29-31fda50b1408"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
