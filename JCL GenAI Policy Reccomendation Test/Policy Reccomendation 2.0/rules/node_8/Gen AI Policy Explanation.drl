@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Gen AI Policy Explanation</name>
+  <uuid>c3c3b3b6-ebf5-4a3a-b1e8-b62346828c89</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'Policy Recommendation' is defined
+then
+	set decision to the gen AIPolicy reccomendataion test computed from 
+	Age being ""+the Age of Client ,
+	Policy being 'Policy Recommendation' ,
+	Physical Activity Level being ""+the Physical Activity Level of Client ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

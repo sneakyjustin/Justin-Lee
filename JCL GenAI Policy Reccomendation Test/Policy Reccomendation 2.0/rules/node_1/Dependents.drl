@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Dependents</name>
+  <uuid>5fec907d-6528-4566-b981-dd9dfc50dc3c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	Client is Dependents 
+then
+	add 1 to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

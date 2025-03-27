@@ -1,0 +1,17 @@
+{
+  "name" : "GENAI",
+  "type" : "WML",
+  "description" : null,
+  "updateTime" : 0,
+  "authInfo" : {
+    "authType" : "IAM",
+    "apiKey" : null,
+    "authUrl" : "https://iam.bluemix.net/identity/token"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "WML",
+    "mlUrl" : "https://us-south.ml.cloud.ibm.com",
+    "projectId" : "ba473d33-e8a2-4de7-8f67-0e3d3632dc9f"
+  },
+  "version" : "V1"
+}

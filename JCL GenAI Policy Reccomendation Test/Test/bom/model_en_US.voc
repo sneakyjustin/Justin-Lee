@@ -1,0 +1,19 @@
+
+# cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation#concept.label = Client Information
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.ClientInformation(long,boolean,long)#phrase.navigation = a new {Client Information} where {0, Age} {1, Dependents} {2, Physical Activity Level}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.age#phrase.action = set the Age of {this} to {Age}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.age#phrase.addition_setter = add {Age} to the Age of {this}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.age#phrase.navigation = {Age} of {this}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.age#phrase.subtraction_setter = subtract {Age} from the Age of {this}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.action[0] = {this} gets Dependents only if {Dependents}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.action[1] = make it {Dependents} that {this} is Dependents
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.action[1].deprecated = true
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.navigation = {this} is Dependents
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.negative_predicate = {this} is not Dependents
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.negative_predicate_setter = {this} does not get Dependents
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.dependents#phrase.positive_predicate_setter = {this} gets Dependents
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.physicalActivityLevel#phrase.action = set the Physical Activity Level of {this} to {Physical Activity Level}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.physicalActivityLevel#phrase.addition_setter = add {Physical Activity Level} to the Physical Activity Level of {this}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.physicalActivityLevel#phrase.navigation = {Physical Activity Level} of {this}
+cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation.physicalActivityLevel#phrase.subtraction_setter = subtract {Physical Activity Level} from the Physical Activity Level of {this}

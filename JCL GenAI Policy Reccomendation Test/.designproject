@@ -1,0 +1,10 @@
+{
+  "description" : "Decision Service to recommend a specific Health Insurance Policy depending on risk factors and data collected",
+  "groupId" : "cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test",
+  "locale" : "en_US",
+  "properties" : {
+    "refactoringEnabled" : false,
+    "tags" : [ ]
+  },
+  "extraProperties" : { }
+}

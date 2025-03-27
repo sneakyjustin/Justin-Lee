@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>f303758b-f377-44e5-816d-02668768d8f6</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="Decision">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sum">
+                <input bomType="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation" collection="false" name="Client"/>
+                <output bomType="java.lang.Long" collection="false" name="Decision"/>
+                <rule defaultRule="false" href="node_1/Basic%20Policy%20Recommendation.dmt" kind="DecisionTable" name="Basic Policy Recommendation"/>
+                <rule defaultRule="false" href="node_1/Dependents.drl" kind="BusinessRule" name="Dependents"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Decision" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_5" name="Client">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation" collection="false" name="Client"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="Client" typeRef="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation"/>
+    </inputData>
+    <decision id="node_7" name="Policy Recommendation">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Long" collection="false" name="Decision"/>
+                <output bomType="java.lang.String" collection="false" name="Policy Recommendation"/>
+                <rule defaultRule="false" href="node_7/Basic%20Policy%20Recommendation.dmt" kind="DecisionTable" name="Basic Policy Recommendation"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_7_ii" name="Policy Recommendation" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_8" name="Policy Explanation">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test.ClientInformation" collection="false" name="Client"/>
+                <input bomType="java.lang.String" collection="false" name="Policy Recommendation"/>
+                <output bomType="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest.GenAIPolicyReccomendataionTestOutput" collection="false" name="Policy Explanation"/>
+                <rule defaultRule="false" href="node_8/Gen%20AI%20Policy%20Explanation.drl" kind="BusinessRule" name="Gen AI Policy Explanation"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_8_ii" name="Policy Explanation" typeRef="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest.GenAIPolicyReccomendataionTestOutput"/>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_6"/>
+        </knowledgeRequirement>
+    </decision>
+    <businessKnowledgeModel id="node_6" name="Gen AI Policy Reccomendataion Test">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[generativeAI]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Gen AI Policy Reccomendataion Test" typeRef="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest.GenAIPolicyReccomendataionTestOutput"/>
+        <encapsulatedLogic typeRef="cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest.GenAIPolicyReccomendataionTestOutput">
+            <formalParameter name="policy" typeRef="java.lang.String"/>
+            <formalParameter name="age" typeRef="java.lang.String"/>
+            <formalParameter name="dependents" typeRef="java.lang.String"/>
+            <formalParameter name="physicalActivityLevel" typeRef="java.lang.String"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.genaipolicyreccomendataiontest.GenAIPolicyReccomendataionTest"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

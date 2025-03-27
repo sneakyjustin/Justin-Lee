@@ -1,0 +1,30 @@
+
+package cp4admin.jcl_genai_ads_demo.jcl_genai_policy_reccomendation_test.test;
+
+
+class ClientInformation
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "ClientInformation"
+        #de.generated
+{
+    long age
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Age"
+                #update;
+    boolean dependents
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Dependents"
+                #update;
+    long physicalActivityLevel
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "PhysicalActivityLevel"
+                #update;
+    ClientInformation(long age, boolean dependents, long physicalActivityLevel)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    ClientInformation()
+                #dataio.default;
+}
+
